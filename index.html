@@ -20,7 +20,11 @@
     </head>
     <body>
         <h1>上傳照片</h1>
-        <input type="file" accept="image/*" onchange="previewImage(event)">
-        <br>
-        <img id="preview" src="#" alt="預覽圖片" style="max-width: 300px;">
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" accept="image/*" name="photo" onchange="previewImage(event)">
+            <br>
+            <img id="preview" src="#" alt="預覽圖片" style="max-width: 300px;">
+            <br>
+            <input type="submit" value="上傳圖片">
+          </form>
       </body>
