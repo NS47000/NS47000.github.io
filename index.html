@@ -7,24 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 指定螢幕寬度為裝置寬度，畫面載入初始縮放比例100%-->
         <meta name="description" content="網頁設計入門筆記。">  <!-- 提供搜尋引擎關於網頁頁面內的重要資訊-->
         <link rel="stylesheet" href="style.css"> <!-- 連結到style.css-->
-        <script>
-            function previewImage(event) {
-              var reader = new FileReader();
-              reader.onload = function(){
-                var output = document.getElementById('preview');
-                output.src = reader.result;
-              };
-              reader.readAsDataURL(event.target.files[0]);
-            }
-          </script>
+        
     </head>
     <body>
-        <h1>上傳照片</h1>
-        <form action="/upload" method="POST" enctype="multipart/form-data">
-            <input type="file" accept="image/*" name="photo" onchange="previewImage(event)">
-            <br>
-            <img id="preview" src="#" alt="預覽圖片" style="max-width: 300px;">
-            <br>
-            <input type="submit" value="上傳圖片">
-          </form>
-      </body>
+        
+        <a href="https://github.com/NS47000">Mason Github link</a>
+    </body>
